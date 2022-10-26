@@ -13,6 +13,14 @@
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    .pc_wrap .pc_gnb{
+      display: none;  
+    }  
+    
+    .m_menu{
+      display: block;
+    }
+  
 }
 
 

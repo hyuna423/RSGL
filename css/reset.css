@@ -52,4 +52,8 @@ hr { display:none; }
 
 
 a{text-decoration:none;}
+a:hover{
+	text-decoration: none;
+	color: none;
+}
 button{border:none; background:none;}

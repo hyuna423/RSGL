@@ -39,37 +39,42 @@
 
   <header>
 
-    <div class="">
+    <div class="pc_wrap container">
 
-      <nav class="">
+      <nav class="pc_gnb">
         <ul>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="index_eng.html"><h1><img src="img/" alt=""></h1></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#Feature" class="scroll">Feature</a></li>
+          <li><a href="#Wallet" class="scroll">Wallet</a></li>
+          <li class="logo"><a href="index_eng.html"><h1><img src="img/RSGL_logo.png" alt="logo"></h1></a></li>
+          <li><a href="#Roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#Contact" class="scroll">Contact</a></li>
 
         </ul>
       </nav>
-
+  
 
       <!--반응형-->
 
-      <div class="">
 
-        <img src="img/" alt="menu_button">
+      <div class="m_menu">
+        <a href="" class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        
 
       </div>
 
-      <nav class="">
+      <nav class="m_gnb">
 
         <ul>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#Feature" class="scroll">Feature</a></li>
+          <li><a href="#Wallet" class="scroll">Wallet</a></li>
+          <li><a href="#Roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#Contact" class="scroll">Contact</a></li>
 
         </ul>
 
@@ -78,17 +83,38 @@
       <!--반응형 js-->
       <script type="text/javascript">
         $(function () {
-          $("").click(function () {
-            $("").animate({ width: "toggle" }, 250);
+          $(".m_menu").click(function () {
+            $(".m_gnb").animate({ width: "toggle" }, 250);
           });
         });
 
       </script>
-
-    </div>
+  </div>
 
   </header>
 
+  <main>
+    <section id="Home">
+      <div class="main_vid">
+        <video autoplay="" muted="" loop="" playsinline="">
+          <source src="vid/main_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="home_wrap container">
+        <div class="home_txt">
+          <h2>Reits Global land</h2>
+          <span>부동산 상품을 코인화 하여 자산형 코인 형태로 거래하는 플랫폼</span>
+        </div>
+      </div>
+
+      <div class="button_gnb">
+        <button class="wallet"><a href=""> <i class="xi-wallet"></i>Wallet</a></button>
+        <button class="whte_pp"><a href=""> <i class="xi-file-download"></i>Withepaper</a></button>
+        <button class="lan"><a href="index_eng.html"><i class="xi-globus"></i></a></button>
+      </div>
+    </section>
+  </main>
 
 
   <script>
