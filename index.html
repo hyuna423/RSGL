@@ -29,6 +29,7 @@
   <!--js-->
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/menu_scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 
@@ -90,7 +91,47 @@
 
   </header>
 
+  <section id="intro">
+    <div class="intro_wrap container">
+      <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        RSGL
+      </h3>
+      <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        부동산은 역사적으로 불변의 자산이었고, 지금도 가장 각광받는 안정적인 실물 자신입니다. <br>
+        하지만 현재 국내 부동산투자 시장이 심각한 타격을 받아 부동산 거품이 심한 사회적 변화에 맞춰 새로운 부동산 상품화를 
+        선도해 가기 위해 블록체인의 빅데이터 기술과 스마트 컨트랙트를 결합하여, 글로벌 부동산 시장에 새로운 트렌드가 될 것입니다.
+      </p>
+    </div>
+  </section>
+  <!-- //intro -->
 
+  <section id="business">
+    <div class="business_wrap container">
+      <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+        Business Model
+      </h3>
+      <div class="image" data-aos="zoom-out-down" data-aos-duration="2000"><img src="./img/business.png"></div>
+      <div class="text_box">
+        <div class="card" data-aos="flip-right" data-aos-duration="3000">
+          <b>매입형</b>
+          <p>해외 부동산 상품에 투자 받은 금액으로 실제로 부동산을 매입하고, RSGL코인을 보유한 비율에 따라 월세수익과 매각수익을 배분하는 형태입니다.</p>
+        </div>
+
+        <div class="card" data-aos="flip-right" data-aos-duration="3000">
+          <b>재임대형</b>
+          <p>부동산 상품에 투자 받은 금액으로 전세 매물을 구하고, 월세로 재임대 하여 발생하는 월세수익을 배분하는 형태입니다.</p>
+        </div>
+
+        <div class="card" data-aos="flip-right" data-aos-duration="3000">
+          <b>상업용 부동산 임대</b>
+          <p>임대를 원하는 개인 또는 사업자는 RSGL플랫폼에서 상업용 부동산 상품에 대한 정보를 확인하고 코인을 지불하여, 부동산 상품 거래에 참여가 가능한 형태입니다.</p>
+        </div>
+      </div>
+      <!-- //text_box -->
+    </div>
+    <!-- //business_wrap container -->
+  </section>
+  <!-- //business -->
   <script>
     AOS.init();
   </script>

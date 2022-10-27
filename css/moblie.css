@@ -1,18 +1,29 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+  #business .business_wrap .text_box{
+    width: 100%;
+  }
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    #business .business_wrap .text_box .card{
+      width: 31%;
+      height: 230px;
+    }
+
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    #business .business_wrap .image img{
+      max-width: 100%;
+    }
 }
 
 
@@ -20,7 +31,18 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  #business .business_wrap .text_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  #business .business_wrap .text_box .card{
+    width: 80%;
+    height: 50%;
+    padding: 6% 5%;
+    margin-bottom: 4%;
+  }
 }
 
 
@@ -28,7 +50,7 @@
 
 
 @media screen and (max-width:576px) {
-
+  
 }
 
 
@@ -36,12 +58,12 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
-
+    
 }
 
 
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
-
+     
 }

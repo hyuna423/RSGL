@@ -12,6 +12,9 @@ h3{
   text-align: center;
 }
 
+body{
+  background: #0F1338;
+}
 
 @media (min-width:1521px) {
   .container {
@@ -23,4 +26,108 @@ h3{
 
 
 
+
+
 /*헤더*/
+
+/* intro */
+#intro{
+  width: 100%;
+  height: auto;
+  padding: 10% 0;
+  position: relative;
+}
+
+#intro::after{
+  content: '';
+  background: url(../img/intro_bg.png) no-repeat 0 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: -1;
+}
+
+
+#intro .intro_wrap{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#intro .intro_wrap p{
+  text-align: center;
+  color: #fff;
+  line-height: 2;
+  font-size: 1em;
+}
+
+/* //intro */
+
+/* business */
+#business{
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 5% 0;
+}
+
+#business::after{
+  content: '';
+  background: url(../img/intro_bg02.png) no-repeat 0 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -20%;
+  left: 0;
+  z-index: -2;
+}
+
+#business .business_wrap{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#business .business_wrap .image{
+  width: 100%;
+  text-align: center;
+  padding-top: 1%;
+}
+
+#business .business_wrap .image img{
+  max-width: 80%;
+}
+
+#business .business_wrap .text_box{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+}
+
+#business .business_wrap .text_box .card{
+  width: 345px;
+  height: 250px;
+  background: linear-gradient(to bottom,rgba(57, 122, 198, 0.37),rgba(25, 75, 134, 0)) no-repeat;
+  padding: 3% 2%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#business .business_wrap .text_box .card b{
+  text-align: center;
+  font-style: normal;
+  font-size: 1.1em;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+#business .business_wrap .text_box .card p{
+  color: #fff;
+  font-size: 1em;
+  font-style: normal;
+}
