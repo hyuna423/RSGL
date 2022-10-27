@@ -1,18 +1,87 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+  /*contact*/
+
+  .contact_area form{
+    width: 75%;
+  }
+
+  .contact_area form input, .contact_area form textarea{
+    width: 90%;
+    height: 4.7rem;
+    padding: 5%;
+  }
+
+  .contact_area form input.send{
+    width: 40%;
+    height: 4.8rem;
+  }
+
+  .contact_area form textarea{
+    padding: 3.6% 5%;
+  }
+
+
+  /*footer*/
+  .f_box1{
+    width: 38%;
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    /*contact*/
+    
+  .contact_area form{
+    width: 80%;
+  }
+
+
+    /*footer*/
+    .f_box1{
+      width: 42%;
+  }
+
+  .f_box3{
+    width: 12%;
+  }
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    /*contact*/
+
+    .contact_area form{
+      width: 100%;
+    }
+
+    .contact_area form textarea{
+      padding: 5%;
+    }
+  
+    /*footer*/
+
+    .footer_contents{
+      display: block;
+      text-align: center;
+      margin-bottom: 7%;
+      border: 1px solid rgba(255,255,255,.5);
+      border-radius: 10px;
+      padding: 5% 1.5%;
+    }
+
+    .f_box{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .f_logo{
+      margin-bottom: 8%;
+    }
 }
 
 
@@ -20,6 +89,10 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  /*contact*/
+  .contact_area form textarea{
+    padding: 6% 5%;
+  }
 
 }
 
@@ -29,6 +102,16 @@
 
 @media screen and (max-width:576px) {
 
+  /*contact*/
+  
+  .contact_area form input, .contact_area form textarea{
+    height: 4.2rem;
+  }
+
+  .contact_area form input.send{
+    width: 50%;
+    height: 4rem;
+  }
 }
 
 
