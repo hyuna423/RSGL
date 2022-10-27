@@ -20,6 +20,9 @@
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    #business .business_wrap .text_box .card{
+      height: 310px;
+    }
 }
 
 
@@ -28,6 +31,9 @@
 
 @media screen and (max-width:767px) {
 
+  #business .business_wrap .text_box .card{
+    height: 270px;
+  }
 }
 
 
@@ -35,7 +41,9 @@
 
 
 @media screen and (max-width:576px) {
-
+  #business .business_wrap .text_box .card{
+    height: 300px;
+  }
 }
 
 

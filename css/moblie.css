@@ -11,6 +11,10 @@
   #Home .main_vid video {
     height:100vh;    
   }
+
+  #business .business_wrap .text_box{
+    width: 100%;
+  }
   
 }
 
@@ -18,6 +22,10 @@
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    #business .business_wrap .text_box .card{
+      width: 31%;
+      height: 230px;
+    }
 }
 
 
@@ -33,6 +41,10 @@
       display:block;
     }
 
+    #business .business_wrap .image img{
+      max-width: 100%;
+    }
+
   
 }
 
@@ -42,6 +54,18 @@
 
 @media screen and (max-width:767px) {
 
+  #business .business_wrap .text_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #business .business_wrap .text_box .card{
+    width: 80%;
+    height: 50%;
+    padding: 6% 5%;
+    margin-bottom: 4%;
+  }
 }
 
 
