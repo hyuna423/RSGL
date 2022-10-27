@@ -7,7 +7,7 @@
 h3{
   font-size: 2.5em;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: #fff;
   text-align: center;
 }
@@ -50,7 +50,7 @@ header{
 .pc_wrap .pc_gnb ul {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -59,6 +59,8 @@ header{
 
 .pc_wrap .pc_gnb ul li{
   list-style: none;
+  text-align: center;
+  display: flex;
 }
 
 
@@ -78,6 +80,7 @@ header{
   padding: 5px 10px;
   position: relative;
   margin: 0 25px;
+  text-align: center;
 }
 .pc_wrap .pc_gnb ul li a:hover{
   color: #fff;
@@ -458,7 +461,7 @@ LEVEL 3. MOBILE ANIMATION STYLES
   font-weight: bold;
 }
 
-#Home .home_wrap .home_txt span{
+#Home .home_wrap .home_txt h6{
   font-size: 2rem;
 }
 
@@ -547,9 +550,10 @@ LEVEL 3. MOBILE ANIMATION STYLES
   height: auto;
   padding: 10% 0;
   position: relative;
+  background: #0F1338;
 }
 
-#intro::after{
+#intro::before{
   content: '';
   background: url(../img/intro_bg.png) no-repeat 0 0;
   width: 100%;
@@ -557,7 +561,6 @@ LEVEL 3. MOBILE ANIMATION STYLES
   position: absolute;
   top: 0%;
   left: 0;
-  z-index: -1;
 }
 
 
@@ -565,6 +568,7 @@ LEVEL 3. MOBILE ANIMATION STYLES
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  position:relative;
 }
 
 #intro .intro_wrap p{
@@ -582,9 +586,10 @@ LEVEL 3. MOBILE ANIMATION STYLES
   height: auto;
   position: relative;
   padding: 5% 0;
+  background: #0F1338;
 }
 
-#business::after{
+#business::before{
   content: '';
   background: url(../img/intro_bg02.png) no-repeat 0 0;
   width: 100%;
@@ -592,13 +597,13 @@ LEVEL 3. MOBILE ANIMATION STYLES
   position: absolute;
   top: -20%;
   left: 0;
-  z-index: -2;
 }
 
 #business .business_wrap{
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 #business .business_wrap .image{
@@ -642,3 +647,192 @@ LEVEL 3. MOBILE ANIMATION STYLES
   font-size: 1em;
   font-style: normal;
 }
+
+
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+
+
+
+/*contact*/
+
+
+#contact{
+  width: 100%;
+  background: url(../img/contact_bg.png) no-repeat center center;
+  padding: 100px 0;
+  background-size: cover;
+}
+
+.contact_area{
+  width: 100%; 
+}
+
+.contact_area form{
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,.9);
+  padding: 5%;
+  box-shadow: 0 0 30px #000;
+  -webkit-box-shadow: 0 0 30px #000;
+  border-radius: 15px;
+}
+
+.contact_area form h3{
+  color: #000;
+}
+
+.contact_area form input, .contact_area form textarea{
+  display: block;
+  border:none;
+  width: 90%;
+  margin: 0 auto 8%;
+  height: 4.2rem;
+  border-radius: 40px;
+  padding: 5%;
+  background-color: rgba(183,210,240,.4);
+}
+
+.contact_area form input::placeholder, .contact_area form textarea::placeholder{
+  color: #558FD1;
+}
+
+.contact_area form input.send{
+  width: 50%;
+  background-color: #558FD1;
+  color: #fff;
+  padding: 0 !important;
+  height: 4.5rem;
+
+}
+
+.contact_area form input.send:hover{
+  background-color: rgba(255,255,2555,.3);
+  color: #558FD1;
+  box-shadow: 0 0 30px #6fa8e9;
+  -webkit-box-shadow: 0 0 30px #6fa8e9;
+}
+
+.contact_area form textarea{
+  overflow-y: hidden;
+  padding: 3.5% 5%;
+}
+
+
+/*footer*/
+
+footer{
+  width: 100%;
+  color: #fff;
+  background-color: #01031F;
+  padding: 100px 0 50px;
+}
+
+.footer_wrap{
+  width: 100%;
+
+}
+
+.footer_contents{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.f_box.f_box2{
+  width: 32%;
+}
+
+.f_box.f_box1, .f_box.f_box3{  
+  width: 32%;
+}
+
+.f_box h4{
+ font-weight: 500;
+ color: #eeeeeeca;
+}
+
+.f_box li{
+  margin-bottom: 4%;
+}
+
+.f_box span{
+  margin-bottom: 5%;
+  color: #eeeeeea4;
+}
+
+
+.f_box3{
+  text-align: right;
+}
+
+.f_box3 ul li{
+  float: right;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+
+.f_box3 a{
+  display: inline-block;
+  color: #fff;
+  transition: all .5s;
+  margin-right: 3%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.f_box3 ul li a i{
+  font-size: 20px;
+  padding:5px;
+}
+
+.f_box3 a:last-child{
+  margin-right: 0 !important;
+}
+
+.f_box3 a:hover{
+  color: #558FD1;
+  transform: scale(1.05);
+  border: 1px solid #558FD1;
+  box-shadow: 0 0 10px #fff;
+}
+
+
+.f_logo{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+
+.f_logo a{
+  display: inline-block;
+}
+
+
+
+.f_logo a img{
+  max-width: 90%;
+  opacity:.3;
+  transition: all 0.6s ease-in-out;
+}
+
+.f_logo a:hover img{
+  opacity:.8;
+}
+.f_text{
+  text-align: center;
+  color: #4E4A4A;
+  font-size: 0.5em;
+}
+

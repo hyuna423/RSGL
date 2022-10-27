@@ -6,7 +6,7 @@
   <title>RSGL</title>
 
   <!--meta-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="le=edge">
 
   <!--bootstrap-->
@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/moblie.css">
-  <link rel="stylesheet" href="css/index_eng.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
   <!--favicon--->
   <link href="img/favicon.ico" rel="icon">
@@ -29,6 +30,7 @@
   <!--js-->
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/menu_scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 
@@ -46,11 +48,11 @@
 
           <li><a href="#intro" class="scroll">Feature</a></li>
           <li><a href="#Wallet" class="scroll">Wallet</a></li>
-          <li class="logo"><a href="index_eng.html">
+          <li class="logo"><a href="index.html">
               <h1><img src="img/RSGL_logo.png" alt="logo"></h1>
             </a></li>
           <li><a href="#Roadmap" class="scroll">Roadmap</a></li>
-          <li><a href="#Contact" class="scroll">Contact</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
 
         </ul>
       </nav>
@@ -75,7 +77,7 @@
         <li class="menu__group"><a href="#intro" class="scroll link menu__link">Feature</a></li>
         <li class="menu__group"><a href="#Wallet" class="scroll link menu__link">Wallet</a></li>
         <li class="menu__group"><a href="#Roadmap" class="scroll link menu__link">Roadmap</a></li>
-        <li class="menu__group"><a href="#Contact" class="scroll link menu__link">Contact</a></li>
+        <li class="menu__group"><a href="#contact" class="scroll link menu__link">Contact</a></li>
 
       </ul>
 
@@ -85,27 +87,27 @@
     <!--반응형 js-->
 
     <script>
-      (function(){
-  'use strict';
+      (function () {
+        'use strict';
 
-  class Menu {
-    constructor(settings) {
-      this.nodeMenu = settings.nodeMenu;
-      settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
-    }
+        class Menu {
+          constructor(settings) {
+            this.nodeMenu = settings.nodeMenu;
+            settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
+          }
 
-    toggle() {
-      return this.nodeMenu.classList.toggle('js-menu_activated');
-    }
-  }
+          toggle() {
+            return this.nodeMenu.classList.toggle('js-menu_activated');
+          }
+        }
 
-  let nodeMenu = document.querySelector('body');
-  
-  new Menu({
-    nodeMenu: nodeMenu,
-    nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
-  });
-})();
+        let nodeMenu = document.querySelector('body');
+
+        new Menu({
+          nodeMenu: nodeMenu,
+          nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
+        });
+      })();
     </script>
     <!-- <script type="text/javascript">
         $(function () {
@@ -120,17 +122,17 @@
   </header>
 
   <main>
-      <div class="button_gnb">
-        <button class="wallet"><a href=""> <i class="xi-wallet"></i>Wallet</a></button>
-        <button class="whte_pp"><a href=""> <i class="xi-file-download"></i>Withepaper</a></button>
-        <button class="lan"><a href="index_eng.html"><i class="xi-globus"></i></a></button>
-      </div>
-      <div class="bottom_gnb">
-        <button class="home_btn"><a href="#Home"><i class="xi-home"></i></a></button>
-        <button class="wallet"><a href=""> <i class="xi-wallet"></i></a></button>
-        <button class="whte_pp"><a href=""> <i class="xi-file-download"></i></a></button>
-        <button class="lan"><a href="index_eng.html"><i class="xi-globus"></i></a></button>
-      </div>
+    <div class="button_gnb">
+      <button class="wallet"><a href=""> <i class="xi-wallet"></i>Wallet</a></button>
+      <button class="whte_pp"><a href=""> <i class="xi-file-download"></i>Withepaper</a></button>
+      <button class="lan"><a href="index_eng.html"><i class="xi-globus"></i></a></button>
+    </div>
+    <div class="bottom_gnb">
+      <button class="home_btn"><a href="#Home"><i class="xi-home"></i></a></button>
+      <button class="wallet"><a href=""> <i class="xi-wallet"></i></a></button>
+      <button class="whte_pp"><a href=""> <i class="xi-file-download"></i></a></button>
+      <button class="lan"><a href="index_eng.html"><i class="xi-globus"></i></a></button>
+    </div>
     <section id="Home">
       <div class="main_vid">
         <video autoplay="" muted="" loop="" playsinline="">
@@ -140,57 +142,124 @@
 
       <div class="home_wrap container">
         <div class="home_txt">
-          <h2>Reits Global land</h2>
-          <span>부동산 상품을 코인화 하여 자산형 코인 형태로 거래하는 플랫폼</span>
+          <h2 class="animate__animated animate__swing">Reits Global land</h2>
+          <h6 class="animate__animated animate__fadeInUpBig">부동산 상품을 코인화 하여 자산형 코인 형태로 거래하는 플랫폼</h6>
         </div>
       </div>
 
     </section>
+
+
+
+
+    <section id="intro">
+      <div class="intro_wrap container">
+        <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+          RSGL
+        </h3>
+        <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          부동산은 역사적으로 불변의 자산이었고, 지금도 가장 각광받는 안정적인 실물 자신입니다. <br>
+          하지만 현재 국내 부동산투자 시장이 심각한 타격을 받아 부동산 거품이 심한 사회적 변화에 맞춰 새로운 부동산 상품화를
+          선도해 가기 위해 블록체인의 빅데이터 기술과 스마트 컨트랙트를 결합하여, 글로벌 부동산 시장에 새로운 트렌드가 될 것입니다.
+        </p>
+      </div>
+    </section>
+    <!-- //intro -->
+
+    <section id="business">
+      <div class="business_wrap container">
+        <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+          Business Model
+        </h3>
+        <div class="image" data-aos="zoom-out-down" data-aos-duration="2000"><img src="./img/business.png"></div>
+        <div class="text_box">
+          <div class="card" data-aos="flip-right" data-aos-duration="3000">
+            <b>매입형</b>
+            <p>해외 부동산 상품에 투자 받은 금액으로 실제로 부동산을 매입하고, RSGL코인을 보유한 비율에 따라 월세수익과 매각수익을 배분하는 형태입니다.</p>
+          </div>
+
+          <div class="card" data-aos="flip-right" data-aos-duration="3000">
+            <b>재임대형</b>
+            <p>부동산 상품에 투자 받은 금액으로 전세 매물을 구하고, 월세로 재임대 하여 발생하는 월세수익을 배분하는 형태입니다.</p>
+          </div>
+
+          <div class="card" data-aos="flip-right" data-aos-duration="3000">
+            <b>상업용 부동산 임대</b>
+            <p>임대를 원하는 개인 또는 사업자는 RSGL플랫폼에서 상업용 부동산 상품에 대한 정보를 확인하고 코인을 지불하여, 부동산 상품 거래에 참여가 가능한 형태입니다.</p>
+          </div>
+        </div>
+        <!-- //text_box -->
+      </div>
+      <!-- //business_wrap container -->
+    </section>
+    <!-- //business -->
+
+
+
+    <section id="contact">
+      <div class="contact_area container" data-aos="flip-left">
+        <form action="" class="gform" data-email="" method="">
+
+          <h3 data-aos="fade-up" data-aos-duration="3000">CONTACT</h3>
+          <input type="email" value="" placeholder="E-MAIL" class="email" required data-aos="fade-up"
+            data-aos-duration="3000">
+          <input type="text" value="" placeholder="NAME" class="name" required data-aos="fade-up"
+            data-aos-duration="3000">
+          <input type="text" value="" placeholder="TITLE" class="title" required data-aos="fade-up"
+            data-aos-duration="3000">
+          <textarea name="message" id="message" placeholder="TEXT" data-aos="fade-up"
+            data-aos-duration="3000"></textarea>
+
+          <input type="submit" value="SEND" class="send" data-aos="fade-up" data-aos-duration="3000">
+        </form>
+      </div><!-- contact_area -->
+    </section><!-- contact -->
+
+
   </main>
 
+  <footer>
+    <div class="footer_wrap container">
+      <div class="footer_contents" >
+        <ul class="f_box f_box1">
+          <li><h4>CEO</h4>
+            <span>dddd</span></li>
+          
+          <li><h4>ADDRESS</h4>
+            <span>dddddddddddddd</span></li>
+          
+        </ul>
 
-  
-  <section id="intro">
-    <div class="intro_wrap container">
-      <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-        RSGL
-      </h3>
-      <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        부동산은 역사적으로 불변의 자산이었고, 지금도 가장 각광받는 안정적인 실물 자신입니다. <br>
-        하지만 현재 국내 부동산투자 시장이 심각한 타격을 받아 부동산 거품이 심한 사회적 변화에 맞춰 새로운 부동산 상품화를 
-        선도해 가기 위해 블록체인의 빅데이터 기술과 스마트 컨트랙트를 결합하여, 글로벌 부동산 시장에 새로운 트렌드가 될 것입니다.
-      </p>
-    </div>
-  </section>
-  <!-- //intro -->
+        <ul class="f_box f_box2">
+          <li><h4>CUSTOMER CENTER</h4>
+            <span>ddddddddddddd</span></li>
+          
+          <li><h4>OPERATING HOURS</h4>
+            <span>AM9:00 - PM18:00</span></li>          
+          
+        </ul>
 
-  <section id="business">
-    <div class="business_wrap container">
-      <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
-        Business Model
-      </h3>
-      <div class="image" data-aos="zoom-out-down" data-aos-duration="2000"><img src="./img/business.png"></div>
-      <div class="text_box">
-        <div class="card" data-aos="flip-right" data-aos-duration="3000">
-          <b>매입형</b>
-          <p>해외 부동산 상품에 투자 받은 금액으로 실제로 부동산을 매입하고, RSGL코인을 보유한 비율에 따라 월세수익과 매각수익을 배분하는 형태입니다.</p>
+        <div class="f_box f_box3" >
+          <h4>COMMUNITY</h4>
+          <ul>
+            <li><a href=""><i class="xi-kakaotalk xi-3x"></i></a></li>
+            <li><a href=""><i class="xi-telegram xi-3x"></i></a></li>
+          </ul>
         </div>
+      </div><!-- footer_contents -->
 
-        <div class="card" data-aos="flip-right" data-aos-duration="3000">
-          <b>재임대형</b>
-          <p>부동산 상품에 투자 받은 금액으로 전세 매물을 구하고, 월세로 재임대 하여 발생하는 월세수익을 배분하는 형태입니다.</p>
-        </div>
 
-        <div class="card" data-aos="flip-right" data-aos-duration="3000">
-          <b>상업용 부동산 임대</b>
-          <p>임대를 원하는 개인 또는 사업자는 RSGL플랫폼에서 상업용 부동산 상품에 대한 정보를 확인하고 코인을 지불하여, 부동산 상품 거래에 참여가 가능한 형태입니다.</p>
-        </div>
+      <div class="f_logo">
+        <a href="index.html"><img src="img/f_logo.png" alt="f_logo"></a>
       </div>
-      <!-- //text_box -->
-    </div>
-    <!-- //business_wrap container -->
-  </section>
-  <!-- //business -->
+
+      <div class="f_text">
+        <p>RSGL 재단은 코인제작 및 플랫폼 운영, 지갑 관리, 거래소 상장 추진 및 관리에 관한 업무만 진행하고 있습니다.
+          코인 판매에 관련된 업무엔 관여하지 않습니다.
+        </p>
+      </div>
+    </div><!-- footer_wrap -->
+  </footer>
 
   <script>
     AOS.init();

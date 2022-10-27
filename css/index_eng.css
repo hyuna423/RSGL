@@ -2,7 +2,10 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
-
+    .f_box1{
+      width: 35%;
+    }
+    
 
 
     
@@ -22,6 +25,9 @@
   @media screen and (max-width:991px) {
     #business .business_wrap .text_box .card{
       height: 310px;
+    }
+    .f_box{
+      width: 100%;
     }
 }
 

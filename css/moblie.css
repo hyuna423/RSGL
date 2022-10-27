@@ -15,6 +15,34 @@
   #business .business_wrap .text_box{
     width: 100%;
   }
+
+   /*contact*/
+
+   .contact_area form{
+    width: 75%;
+  }
+
+  .contact_area form input, .contact_area form textarea{
+    width: 90%;
+    height: 4.7rem;
+    padding: 5%;
+  }
+
+  .contact_area form input.send{
+    width: 40%;
+    height: 4.8rem;
+  }
+
+  .contact_area form textarea{
+    padding: 3.6% 5%;
+  }
+
+
+  /*footer*/
+  .f_box1{
+    width: 38%;
+}
+
   
 }
 
@@ -26,6 +54,22 @@
       width: 31%;
       height: 230px;
     }
+
+      /*contact*/
+    
+  .contact_area form{
+    width: 80%;
+  }
+
+
+    /*footer*/
+    .f_box1{
+      width: 42%;
+  }
+
+  .f_box3{
+    width: 12%;
+  }
 }
 
 
@@ -33,17 +77,24 @@
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
   
-    .pc_wrap{
-      display: none;  
-    }  
 
-    .hamburger{
-      display:block;
-    }
 
     #business .business_wrap .image img{
       max-width: 100%;
     }
+
+      /*contact*/
+
+      .contact_area form{
+        width: 100%;
+      }
+  
+      .contact_area form textarea{
+        padding: 5%;
+      }
+    
+      /*footer*/
+  
 
   
 }
@@ -53,6 +104,13 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  .pc_wrap{
+    display: none;  
+  }  
+
+  .hamburger{
+    display:block;
+  }
 
   #business .business_wrap .text_box{
     display: flex;
@@ -66,6 +124,32 @@
     padding: 6% 5%;
     margin-bottom: 4%;
   }
+
+  footer {
+    padding: 100px 0 131px;
+}
+
+  .footer_contents {
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.f_box.f_box1, .f_box.f_box2, .f_box.f_box3{
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+
+.f_box.f_box3{
+  text-align: left;
+}
+
+.f_box.f_box3 ul li{
+  float: left;
+  margin-left: 0;
+  margin-right: 5%;
+}
 }
 
 
@@ -90,6 +174,17 @@
 #Home .home_wrap .home_txt span {
   font-size: 1.5rem;
 }
+
+  /*contact*/
+  
+  .contact_area form input, .contact_area form textarea{
+    height: 4.2rem;
+  }
+
+  .contact_area form input.send{
+    width: 50%;
+    height: 4rem;
+  }
 
 }
 
