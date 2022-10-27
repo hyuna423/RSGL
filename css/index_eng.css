@@ -7,10 +7,18 @@
     }
     
 
+    #intro .intro_wrap p {
+      width: 60%;
+      margin: 0 auto;
+    }
 
     
 /*데탑*/
 @media screen and (max-width:1440px) {
+  
+  #intro .intro_wrap p {
+    width: 78%;
+}
 }
 
 
@@ -29,6 +37,10 @@
     .f_box{
       width: 100%;
     }
+
+    #intro .intro_wrap p {
+      width: 90%;
+  }
 }
 
 
